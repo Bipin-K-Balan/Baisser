@@ -1,0 +1,13 @@
+all the chat bot texts are going to main java script
+
+btn btn-sm btn-outline-primary general-form - General button commented 394 line
+
+btn btn-sm btn-outline-primary technical-form - Technical button commented 398 line
+
+btn btn-sm btn-outline-primary language-change - change language commented 402 line
+
+if slot in st:
+        out[slot][-1] = ' '.join([out[slot][-1], tex])
+      else:
+        st.add(slot)
+        out[slot] =[tex]
