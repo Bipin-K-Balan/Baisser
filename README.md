@@ -1,6 +1,6 @@
 # Baisser
 
-Baisser is a conversational AI, which used to automate some portion of a VoIP network suppport Engineering team. The model is designed in a flexible way that can be expand its features and ability to other networking domain areas.
+Baisser is a conversational AI, which used to automate some portion of tasks of VoIP network suppport Engineering team. The model is designed in a flexible way which can  expand its features and ability to support on other networking domain areas as well.
 
 ## Problem Statement:
 
@@ -22,9 +22,14 @@ As a networking support Engineer who working with lots of requests (Incidents an
 
 In this way network team will not get any silly requests from user since it will be handled by model and networking team will only recieve the request with all necessary information that can be directly processed without asking any queries to users. Summarizing Baisser helps networking team to reduce their workload by 25% and they can concentrate on quality work and tasks.
 
-## Model and training
+## Model and training:
 
 Pulled the user request details in csv format from the service now ticketing tool to train the model. Converted direct specific format text requests into conversational format for text lines. Used approx 1178 text line which cover all the intent of users. Google's BERT transformer based model is used here for the combined intent classification and slot detection. There is no other frame works used for creating this like Rasa NLU, Google Dialogue Flow, amazon lex or azure luis due to the lack of flexibility and feature expansion. RoBERTa and BERT considered for this model, but BERT outperforms RoBERTa by 5 % in accuracy for our dataset.
 The model has fine tuned on pretrained hugging face model BERT cased model for 8 epochs with batch size of 16. Model size is near to 900 MB which providing 99 % accuracy on train and 97 % accuracy on testa data for intent classification. It only took roughly 15 mins to finetune the model.
 
+## Baisser demo:
+
+
+
+https://user-images.githubusercontent.com/53367536/124352960-32d84d80-dc21-11eb-95dc-29ddfd2c8070.mp4
 
