@@ -62,6 +62,34 @@ Javascript, html and css to create the frontend of the model like a chatbot like
 
 3.) As of now the model is under testing and performing well on unseen user request, but if we use the uncoming test data coming from user and once the user validated the predicted intents and slots, we can store these texts into databases like Mongo DB, which can be later used for retraining.
 
+## Deployment
+
+Since the entire conversational AI has been developed for our client, initial step was to show the demo of the designed application and explain its functionality and the resulting benefits to our manager, I had to deploy it in a cloud environment. Since it is using heavy weighted BERT as the backend model, I also want to test its perfomance in cloud environment. Considering the usage of this application for a large scale of customers and scalability during business peak hours and holidays, I have used Kubernetics orchestration framework to deploy the application, once it is containarized. I have used Google Cloud Platform (GCP) as the cloud platform for deployment. GCP has their Kubernetes engine called GKE (Google Kubernetes Engine) which ensure all bells and whistles of easiness in deployment, auto-scaling based on utilization of resources, load balancing etc..
+
+1.) Test application in local environment.
+
+2.) Create a Dockerfile by including necessary commands enough to containarize the entire application so that it will work as expected in any environment.
+
+3.) Create deployment.yaml and services.yaml which are the configuration files required for Kubernetes deployment.
+
+4.) Push all the application files along with above 3 files into GCP, open GCP cloud Shell Editor and give the gcloud command to containerize the uploaded application by running the content that given in Docker file and it will be stored in Google Container Registry. Also required necessary admin permissions for storage, GKE
+
+5.) Now create Kubernetes cluster
+
+
+![baisser deployment in gke auto pilot](https://user-images.githubusercontent.com/53367536/127733295-03d9852a-fb9d-4f7b-951d-93e737727b90.PNG)
+![deplo](https://user-images.githubusercontent.com/53367536/127733315-9354d78b-795a-419b-8f3c-6b07fc177b72.PNG)
+![deploymentbaisser](https://user-images.githubusercontent.com/53367536/127733318-8af994d2-eda9-4ff4-9d4c-74e5bfb560dd.PNG)
+![baisser_deployment](https://user-images.githubusercontent.com/53367536/127733322-6fdb8069-2f13-4be1-9b25-ff57074e2164.PNG)
+![pushing deployment and service files](https://user-images.githubusercontent.com/53367536/127733325-126f4f40-1eaf-47a3-9b40-beede18cd1ea.PNG)
+![pods status](https://user-images.githubusercontent.com/53367536/127733332-92b9149d-9564-468b-820f-3e71a5f4c593.PNG)
+![got ip in k8](https://user-images.githubusercontent.com/53367536/127733335-b026e328-6dfb-43ab-85ca-f0c81eeaf43f.PNG)
+![k8](https://user-images.githubusercontent.com/53367536/127733337-a2fd5fb7-9663-4ee4-aed8-04da4c70b2af.PNG)
+
+
+
+
+
 
 ## Baisser demo:
 
