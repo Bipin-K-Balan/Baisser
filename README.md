@@ -2,6 +2,11 @@
 
 Baisser is a conversational AI, which used to automate some portion of tasks of VoIP network suppport Engineering team. The model is designed in a flexible way which can  expand its features and ability to support on other networking domain areas as well.
 
+## Demo Video:
+
+https://user-images.githubusercontent.com/53367536/124352960-32d84d80-dc21-11eb-95dc-29ddfd2c8070.mp4
+
+
 ## Problem Statement:
 
 As a networking support Engineer who working with lots of requests (Incidents and Requested Items (RITMs)) and client's queries will have lot of challenges to handle all those tasks in the proper manner and also should align in the specific SLA (Service Level Agreement). For a VoIP Engineer, request will be mainly recieved from their Client's VoIP phone users who having working in another business domain, so they wont be having much more technical knowlege for handling cisco phones. So we are recieving tickets to our assignment group for even small phone issues and minor trouble shootings. In some cases user's even not aware of the proper way of raising ticket will lead to divert ticket to some other assignment group and it will take long time to reach our team after several shuttles which leads to SLA breach. If customer raised a request and if there any missing details like phone extension number or device MAC address which is critical to process that request, we again need to communicate to user and if user is not reachable, that also will breach SLA by clogging these RITM in assignment queue. So out of total tickets almost 35 % of the tickets are coming like this our networking team is struggling to give assistant for much more serious issues and tasks.
@@ -87,13 +92,4 @@ Since the entire conversational AI has been developed for our client, initial st
 ![k8](https://user-images.githubusercontent.com/53367536/127733337-a2fd5fb7-9663-4ee4-aed8-04da4c70b2af.PNG)
 
 
-
-
-
-
-## Baisser demo:
-
-
-
-https://user-images.githubusercontent.com/53367536/124352960-32d84d80-dc21-11eb-95dc-29ddfd2c8070.mp4
 
